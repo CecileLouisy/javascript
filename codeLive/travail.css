@@ -1,0 +1,28 @@
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 30px 20px; 
+    grid-template-areas: 
+      "civilite nom prenom"
+      "enfants regions ."
+      "message message ."
+      "envoyer . .";
+    width: 60%;  
+    padding: 2%;
+    background-color: #adddf4;
+    font: 1em verdana;
+    
+}
+
+.c1 { grid-area: civilite; }
+.n1 { grid-area: nom; }
+.p1 { grid-area: prenom; }
+.e1 { grid-area: enfants;}
+.r1 { grid-area: regions;}
+.b1 { grid-area: envoyer; }
+.m1 { grid-area: message; }
+
+label {
+    color: blueviolet;
+}

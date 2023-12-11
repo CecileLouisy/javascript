@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulaire.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <title>Formulaire d'inscription</title>
+</head>
+<body id="body">
+    <h1>Inscription à notre super site</h1>
+    <section role="inscription">
+        <h2>Inscription</h2>
+        <p id="message"></p>
+        <form name="inscription" id="inscription" method="POST" action="" onsubmit="return validForm();">
+            <div class="form-group" id="civilite1">
+                <label for="civilite">Civilité :</label>
+                <select name="civilite" id="civilite" onchange="verifCivilite()"> <!--onchange ici au changement du selecteur-->
+                    <option value="">Sélectionner</option>
+                    <option value="Mme">Madame</option>
+                    <option value="M.">Monsieur</option>
+                    <option value="Non-binaire">Non-binaire</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+            </div>
+            <div class="form-group" id="email1">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email" placeholder="fleur.simone@gmail.com" onblur="verifEmail();"> <!--onblur dès qu'on quitte le champ-->
+            </div>
+            <div class="form-group" id="motdepasse1">
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password" onkeyup="verifPassword();"><!--onkeyup dès qu'on enlève le doigt de la touche-->
+            </div>
+            <div class="form-group" id="motdepasse2">
+                <label for="password2">Répéter mot de passe :</label>
+                <input type="password" name="password2" id="password2">
+            </div>
+            <div class="form-group">
+                <label for="age">Age :</label>
+                <input type="number" name="age" id="age" onchange="verifAge();">
+            </div>
+            <button type="submit" name="submit" id="submit">Inscription</button>
+        </form>
+    </section>
+    <script type="text/javascript" src="formulaire.js"></script>
+</body>
+</html>

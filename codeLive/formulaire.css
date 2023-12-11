@@ -1,0 +1,100 @@
+/*Polices utilisées
+font-family: 'Playpen Sans', cursive;*/
+
+*{margin: 0; padding: 0;}
+
+
+.valide{
+    background-color: green;
+    border: 1px solid black;
+}
+
+.error{
+    background-color: red;
+    border: 1px solid green;
+}
+
+h1, h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+h2{
+    margin: 1% 5%;
+    font-size: 2em;
+    font-weight: 200;
+}
+
+
+#inscription{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(5, 1fr); 
+    gap: 15px 10px; 
+    grid-template-areas: 
+    "civilite civilite"
+    "nom prenom"
+    "email age"
+    "motdepasse motdepasse2"
+    "inscription inscription"; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: rgb(220, 206, 215);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px grey;
+}
+
+#civilite1 { grid-area: civilite; }
+#nom { grid-area: nom; }
+#prenom { grid-area: prenom; }
+#email1 { grid-area: email; }
+#motdepasse1 { grid-area: motdepasse; }
+#motdepasse2 { grid-area: motdepasse2; }
+#age { grid-area: age; }
+
+#submit { 
+    grid-area: inscription; 
+    width: 25%; 
+    justify-self: center; 
+    margin-top: 10px; 
+    padding: 10px;
+    font-family: 'Playpen Sans', cursive;
+    font-size: 2em;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+label{
+    font-family: 'Playpen Sans', cursive;
+    font-size: 1.5em;
+}
+
+input{
+    height: 35%;
+    width: 40%;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+input::placeholder {
+    font-size: 1.2em;
+}
+
+select{
+    height: 40%;
+    width: 30%;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+
+option {
+    font-size: 1.2em;
+}
+
+

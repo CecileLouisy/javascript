@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du pendu !</title>
+    <style>
+    #relance{
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <h1>Jeu du pendu</h1>
+    <p>Devinez le mot :</p>
+    <p id="motADeviner"></p>
+    <p>Entrez une lettre :</p>
+    <input type="text" id="lettre">
+    <button onclick="checkLettre()" id="bouton">Soumettre</button>
+    <p id="message"></p>
+    <label for="utile">Lettres utilisées :</label>
+    <input type="text" name="utile" id="utile" readonly>
+    <script type="text/javascript" src="pendu.js"></script>
+    <button id="relance" name="relance">Rejouer</button>
+    
+</body>
+</html>

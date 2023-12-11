@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="travail.css">
+    <title>Ecriture dans le DOM</title>
+</head>
+<body>
+    <h1>Exercice d'écriture dans le DOM</h1>
+    <div class="container">
+        <div class="form-group c1">
+            <label for="civilite">Civilité</label>
+            <select name="civilite" id="civilite">
+                <option value="">Sélectionner</option>
+                <option value="Monsieur">Monsieur</option>
+                <option value="Madame">Madame</option>
+                <option value="Autre">Autre</option>
+            </select>
+        </div>
+        <div class="form-group p1">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+        </div>
+        <div class="form-group n1">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom">
+        </div>
+        <div class="form-group e1">
+            <label for="enfants">Nombre d'enfants :</label>
+            <select name="enfants" id="enfants">
+            </select>
+        </div>
+        <div class="form-group r1">
+            <label for="region">Région :</label>
+            <select name="region" id="region">
+            </select>
+        </div>
+        <div class="form-group m1">
+            <label for="texte">Message :</label>
+            <textarea name="message" id="texte" cols="100" rows="5"></textarea>
+            <p>Vous avez saisi : <span id="nb">0</span> caractère(s). </p>
+        </div>
+        <div class="b1">
+        <button type="button" name="coucou" id="bouton" disabled="disabled">Envoyer</button>
+        </div>
+
+    </div>    
+    <div id="message"></div>
+    <script type="text/javascript" src="travail.js"></script>
+</body>
+</html>

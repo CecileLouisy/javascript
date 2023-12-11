@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le morpion (ça va gratter^^')</title>
+    <style>
+        .tableau{
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-gap: 5px;
+        }
+        .cellule{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            font-size: 36px;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jeu de morpion</h1>
+    <div class="tableau" id="tableau">
+        <div class="cellule" onclick="player(0)"></div>
+        <div class="cellule" onclick="player(1)"></div>
+        <div class="cellule" onclick="player(2)"></div>
+        <div class="cellule" onclick="player(3)"></div>
+        <div class="cellule" onclick="player(4)"></div>
+        <div class="cellule" onclick="player(5)"></div>
+        <div class="cellule" onclick="player(6)"></div>
+        <div class="cellule" onclick="player(7)"></div>
+        <div class="cellule" onclick="player(8)"></div>
+    </div>
+    <p id="message"></p>
+    <script type="text/javascript" src="morpion.js"></script>
+</body>
+</html>
